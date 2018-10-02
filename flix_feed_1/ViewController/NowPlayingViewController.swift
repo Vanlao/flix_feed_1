@@ -71,7 +71,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
         cell.PosterImageView.af_setImage(withURL: PosterURL)
         return cell
     }
-    
+    // the next function prepare all the info about movie if DetailViewController is loaded.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         if let indexPath = tableView.indexPath(for: cell){
@@ -80,6 +80,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
             detailViewControl.movieDetail = movie
         }
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
