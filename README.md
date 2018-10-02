@@ -36,8 +36,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-*removed and replaced for a more detailed gif below*
+![](https://i.imgur.com/MHbfGAM.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -98,7 +97,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 Here's a walkthrough of implemented user stories:
 
 
-![](https://i.imgur.com/MHbfGAM.gif) 
+ 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
