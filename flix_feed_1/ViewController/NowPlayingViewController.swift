@@ -10,7 +10,7 @@ import UIKit
 import AlamofireImage
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource{
-
+    
     
     @IBOutlet weak var tableView: UITableView!
     var movies: [[String: Any]] = []
@@ -71,13 +71,21 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
         cell.PosterImageView.af_setImage(withURL: PosterURL)
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let movie = movies[indexPath.row]
+            let detailViewControl = segue.destination as! DetailViewController
+            detailViewControl.movieDetail = movie
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     
-
+    
+    
 }
