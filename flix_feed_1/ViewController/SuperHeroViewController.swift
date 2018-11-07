@@ -29,7 +29,7 @@ class SuperHeroViewController: UIViewController, UICollectionViewDataSource {
         layout.itemSize = CGSize(width: wide, height: wide * 3/2) //height ratio may varies.
         
         FecthMovies() //fetch poster and any info from API on view controller.
-    }
+    } 
     
     func FecthMovies(){ //copied from NowPlayingViewcontroller.
         //requesting url from the API database
